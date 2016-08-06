@@ -319,20 +319,20 @@
                 <h2 class="m-0">Contact us</h2>
                 <h5 class="text-muted">HAVE ANY QUESTIONS? SEND US A MESSAGE.</h5>
 
-                <form action="">
+                <form id="myForm" method="post" onsubmit="disableButton()" action="PHPMailer/MailFunction.php">
                     <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="Your Name">
+                        <input type="text" name="name" id="name" class="form-control custom-input" placeholder="Your Name">
                     </div>
 
                     <div class="form-group">
-                        <input type="number" class="form-control custom-input" placeholder="Contact Number">
+                        <input type="number" name="number" id="number" class="form-control custom-input" placeholder="Contact Number">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control custom-input" placeholder="Email">
+                        <input type="email" name="email" id="email" class="form-control custom-input" placeholder="Email">
                     </div>
 
-                    <button class="call-bck-btn m-b-40 m-t-40">Request a Call back Now</button>
+                    <button id="submit" class="call-bck-btn m-b-40 m-t-40">Request a Call back Now</button>
 
                 </form>
 
@@ -374,6 +374,56 @@
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+
+
+<script>
+    
+function disableButton(){
+ $('#submit').prop('disabled', true);   
+}
+    /*$( "#myForm" ).submit(function( event ) {
+
+        alert( "Handler for .submit() called." );   
+        var data = $('#myForm').serialize();
+
+        $.ajax({
+          url: 'PHPMailer/MailFunction.php',
+          data: data,
+          method:'post', 
+          success: function(res){
+                alert('csvdghvc');
+                window.location.replace("http://stackoverflow.com");
+                // window.location.href = "https://google.com";
+          },
+          error: function (resp, text) {
+                // alert('why error');
+                // window.location.replace("http://stackoverflow.com");
+                window.location.href = "thank-you.html";
+          }
+        });*/
+
+
+     /*$.ajax({
+      type: "POST", // GET & url for json slightly different
+      url: "PHPMailer/MailFunction.php",
+      data: form.serialize(),
+      success : function(data) {
+          if (data == "success") {
+            alert('success');
+          } else {
+              alert('error');
+          }
+      },
+      error : function(err) { alert("Could not connect to the server.");
+                console.log(err);
+       }
+     });*/
+
+    // });
+</script>
+
+
+
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
