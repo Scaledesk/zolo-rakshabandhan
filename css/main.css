@@ -552,6 +552,11 @@ fieldset{
         height: 420px!important;
     }
 
+    .strip h2{
+        font-size: 20px;
+        text-transform: lowercase;
+    }
+
 
 }
 
@@ -568,4 +573,8 @@ fieldset{
     background: #f9f9f9;
     width: 100%;
     padding: 10px;
+}
+
+.strip h2{
+    text-transform: lowercase;
 }
