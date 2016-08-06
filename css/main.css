@@ -2,12 +2,17 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 
 
 .p-20{
     padding: 20px!important;
+}
+
+.m-0{
+    margin: 0!important;
 }
 
 .m-t-10{
@@ -18,9 +23,18 @@ body{
     margin-top: 20px;
 }
 
+.m-t-40{
+    margin-top: 40px!important;
+}
+
 .m-t-60{
     margin-top: 60px!important;
 }
+
+.m-b-40{
+    margin-bottom: 40px!important;
+}
+
 
 .m-b-60{
     margin-bottom: 60px!important;
@@ -28,6 +42,10 @@ body{
 
 .p-t-40{
     padding-top: 40px!important;
+}
+
+.p-b-0{
+    padding-bottom: 0!important;
 }
 
 .p-b-40{
@@ -43,11 +61,15 @@ body{
 }
 
 .p-l-40{
-    padding-left: 40px!important;
+    padding-left: 40px;
 }
 
 .p-r-40{
-    padding-right: 40px!important;
+    padding-right: 40px;
+}
+
+.p-20{
+    padding: 20px!important;
 }
 
 
@@ -73,6 +95,11 @@ body{
 
 .f-30{
     font-size: 30px!important;
+}
+
+
+.border-0{
+    border: none!important;
 }
 
 
@@ -437,12 +464,19 @@ fieldset{
     padding: 15px 50px;
     color: #fff;
     text-decoration: none;
+    border: none;
+    transition: all .3s ease-out;
+}
+
+.call-bck-btn:focus{
+    outline: none;
 }
 
 
 .call-bck-btn:hover{
     color: #fff;
     text-decoration: none;
+    background-color: #e44f54;
 }
 
 
@@ -459,8 +493,12 @@ fieldset{
 #subscribe-section{
     background-color: #222;
     color: #fff;
+}
+
+#subscribe-section .container{
     padding: 60px 0;
 }
+
 
 
 
@@ -468,4 +506,66 @@ fieldset{
     background-color: #fff;
     padding: 80px 0;
 
+}
+
+.custom-input{
+    height: 50px!important;
+    box-shadow: none!important;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    fieldset{
+        padding: 0!important;
+    }
+
+    fieldset , legend ,h1{
+        font-size: 30px!important;
+    }
+
+    .strip{
+        padding: 10px!important;
+    }
+
+    .strip h2 {
+        color: #fff;
+        text-align: center;
+        line-height: 34px;
+        font-size: 14px;
+    }
+
+    #category-section .container{
+        padding: 10px!important;
+    }
+
+    #footer-section .container{
+        padding: 10px!important;
+    }
+
+    #subscribe-section .container{
+        padding: 20px!important;
+    }
+
+    .main-bg{
+        height: 420px!important;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+.mobile-footer{
+    position: fixed;
+    bottom: 0;
+    background: #f9f9f9;
+    width: 100%;
+    padding: 10px;
 }
