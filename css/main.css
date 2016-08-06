@@ -1,5 +1,4 @@
 
-
 body{
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
@@ -104,7 +103,7 @@ body{
 
 
 .main-bg{
-    background: url('../img/main-bg.jpg') center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('../img/BG-RAKSHABANDHAN-ZOLO.jpg') center no-repeat;
     height: 700px;
     background-size: cover;
     background-position: 50% 50%;
