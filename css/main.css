@@ -552,15 +552,12 @@ fieldset{
     }
 
     .strip h2{
-        font-size: 20px;
+        font-size: 18px;
         text-transform: lowercase;
     }
 
 
 }
-
-
-
 
 
 
@@ -574,6 +571,3 @@ fieldset{
     padding: 10px;
 }
 
-.strip h2{
-    text-transform: lowercase;
-}
